@@ -1,3 +1,6 @@
+;; Yg Song
+;; OSX Yosemite Ver10.10.2, GNU Emacs Ver24.4.1
+
 (setq make-backup-files nil)
 (setq scroll-step 1)
 

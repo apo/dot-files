@@ -1,0 +1,9 @@
+%% shared deps for rebar
+%% copy from Joe's <<Programming Erlang>>
+Home = os:getenv("HOME").
+Dir = Home ++ "/nobackup/erlang_imports/depse",
+{ok, L} = file:list_dir(Dir).
+lists:foreach(fun(I) ->
+		      Path = Dir ++ "/" ++ I ++ "/ebin",
+		      code:add_path(Path)
+	      end, L).

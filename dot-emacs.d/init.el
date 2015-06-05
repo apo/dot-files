@@ -63,7 +63,20 @@
 ;
 ;(add-to-list 'auto-mode-alist '("\\.api\\'" . web-mode))
 ;(add-to-list 'auto-mode-alist '("/some/react/path/*\\.js[x]?\\'" . web-mode))
-;(setq web-mode-content-types-alist
-;      '(("json" . "/some/path/*\\.api\\'")
-;	("xml"  . "/other/path/*\\.api\\'")
-;	("jsx"  . "/some/react/path/*\\.js[x]?\\'")))
+(setq web-mode-content-types-alist
+      '(("json" . "/some/path/*\\.api\\'")
+	("xml"  . "/other/path/*\\.api\\'")
+	("jsx"  . "/some/react/path/*\\.js[x]?\\'")))
+
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 2)
+  )
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+
+
+;; rust-lang
+;; https://github.com/rust-lang/rust-mode
+(add-to-list 'load-path "/path/to/rust-mode/")
+(autoload 'rust-mode "rust-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))

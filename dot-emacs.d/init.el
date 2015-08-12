@@ -80,3 +80,8 @@
 (add-to-list 'load-path "/path/to/rust-mode/")
 (autoload 'rust-mode "rust-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+
+;; go-mode
+;; https://github.com/dominikh/go-mode.el
+(add-to-list 'load-path "~/.emacs.d/plugins/go-mode/")
+(require 'go-mode-autoloads)

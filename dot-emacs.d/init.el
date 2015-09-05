@@ -85,3 +85,8 @@
 ;; https://github.com/dominikh/go-mode.el
 (add-to-list 'load-path "~/.emacs.d/plugins/go-mode/")
 (require 'go-mode-autoloads)
+
+;; toml-mode
+(add-to-list 'load-path "~/.emacs.d/plugins/toml-mode/")
+(require 'toml-mode)
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))

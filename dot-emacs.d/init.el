@@ -90,3 +90,10 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/toml-mode/")
 (require 'toml-mode)
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+;; lua-mode
+;; https://github.com/immerrr/lua-mode
+(add-to-list 'load-path "~/.emacs.d/plugins/lua-mode/")
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))

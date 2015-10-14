@@ -97,3 +97,14 @@
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
+
+;; cmake-mode
+;; https://github.com/Kitware/CMake/blob/master/Auxiliary/cmake-mode.el
+					; Add cmake listfile names to the mode list.
+(setq auto-mode-alist
+      (append
+       '(("CMakeLists\\.txt\\'" . cmake-mode))
+       '(("\\.cmake\\'" . cmake-mode))
+       auto-mode-alist))
+
+(autoload 'cmake-mode "~/.emacs.d/plugins/cmake-mode/cmake-mode.el" t)

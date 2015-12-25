@@ -98,6 +98,11 @@
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
+
+;; nginx-mode
+(add-to-list 'load-path "~/.emacs.d/plugins/nginx-mode/")
+(require 'nginx-mode)
+
 ;; cmake-mode
 ;; https://github.com/Kitware/CMake/blob/master/Auxiliary/cmake-mode.el
 					; Add cmake listfile names to the mode list.

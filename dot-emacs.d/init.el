@@ -60,6 +60,7 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 ;
 ;(add-to-list 'auto-mode-alist '("\\.api\\'" . web-mode))
 ;(add-to-list 'auto-mode-alist '("/some/react/path/*\\.js[x]?\\'" . web-mode))

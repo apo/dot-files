@@ -3,6 +3,7 @@
 
 (setq make-backup-files nil)
 (setq scroll-step 1)
+(column-number-mode t)
 
 (require 'ido)
 (ido-mode t)
